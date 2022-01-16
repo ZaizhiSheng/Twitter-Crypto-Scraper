@@ -1,4 +1,4 @@
-# Twitter-Crypto-Sentiment-scarping-$NEAR
+# Twitter-Crypto-Sentiment-Scarping-$NEAR
 ## Introduction
 Scraping real-time sentiment data from Twitter on target Crypto/NFT Token based on popularity. 
 * Current parameters includes : 
