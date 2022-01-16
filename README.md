@@ -1,4 +1,4 @@
-# Twitter-Crypto-Sentiment-Scraper-$NEAR
+# Twitter-Crypto-Sentiment-scarping-$NEAR
 ## Introduction
 Scraping real-time sentiment data from Twitter on target Crypto/NFT Token based on popularity. 
 * Current parameters includes : 
@@ -25,4 +25,4 @@ Article_text | Replies | Retweets | Love
   * run `python main.py`
 
 * Data Scale
-  * `max_posts =` set the number to be desire amount
+  * `max_posts =` set the number of data for scarping
