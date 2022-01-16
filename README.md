@@ -1,4 +1,6 @@
 # Twitter-Crypto-Sentiment-Scarping-$NEAR
+## Install
+* pip install chromedriver-binary-auto
 ## Introduction
 Scraping real-time sentiment data from Twitter on target Crypto/NFT Token based on popularity. 
 * Current parameters includes : 
