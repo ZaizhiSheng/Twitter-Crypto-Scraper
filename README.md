@@ -21,4 +21,5 @@ Article_text | Replies | Retweets | Love
 ![alt text](https://github.com/ZaizhiSheng/Twitter-Crypto-Scraper/blob/main/word_cloud.png?raw=true)
 
 # Usage
-run main.py
+* Open terminal 
+  * run python main.py
