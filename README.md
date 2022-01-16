@@ -7,9 +7,9 @@ Article_text | Replies | Retweets | Love
 | :--- | ---: | :---: | :---:
 
 * Data Selection Barriers:
-   * 20 minutes min_replies >= 28
-   * 20 minutes min_faves=99
-   * 20 minutes min_retweets>=111
+   * min_replies >= 28
+   * min_faves=99
+   * min_retweets>=111
 
 * query 
     * `query` is target Token what you wanna scrape like: `%24NEAR` stands for `$NEAR`; `%23CRYPTO` stands for `#CRYPTO`
