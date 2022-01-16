@@ -6,6 +6,11 @@ Scraping real-time sentiment data from Twitter on target Crypto/NFT Token based 
 Article_text | Replies | Retweets | Love
 | :--- | ---: | :---: | :---:
 
+* Data Selection Barriers:
+   * 20 minutes min_replies >= 28
+   * 20 minutes min_faves=99
+   * 20 minutes min_retweets=111
+
 * query 
     * `query` is target Token what you wanna scrape like: `%24NEAR` stands for `$NEAR`; `%23CRYPTO` stands for `#CRYPTO`
 
