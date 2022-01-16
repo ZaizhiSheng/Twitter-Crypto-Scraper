@@ -5,7 +5,7 @@ from selenium import webdriver
 from selenium.common.exceptions import StaleElementReferenceException, NoSuchElementException
 from selenium.webdriver import ActionChains
 from selenium.webdriver.remote.webelement import WebElement
-from webdriver_manager.chrome import ChromeDriverManager
+#from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 import csv
 from wordcloud import WordCloud, STOPWORDS
@@ -14,15 +14,15 @@ import pandas as pd
 
 from tonumbers import transfer
 
-max_posts = 12
+max_posts = 20
 
 options = webdriver.ChromeOptions()
 options.add_argument("window-size=715,1655")
 
 options.add_argument('--start-maximized')
 
-#driver = webdriver.Chrome(options=options)
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(options=options)
+#driver = webdriver.Chrome(ChromeDriverManager().install())
 
 actions = ActionChains(driver)
 
@@ -35,7 +35,10 @@ def scrollTo(element: WebElement):
 
 def main(query: str):
     driver.get(
-        f"https://mobile.twitter.com/search?q=({query})%20min_replies%3A28%20min_faves%3A99%20min_retweets%3A111&src=typed_query&f=live")
+        f"https://mobile.twitter.com/search?q=({query})%20min_replies%3A28%20min_faves%3A99%20min_retweets%3A111&src=typed_query&f=live"
+        
+    
+    )
 
     driver.implicitly_wait(10)
     post_xpath = '//div[@aria-label="Timeline: Search timeline"]/div/child::div[@style]'
@@ -56,7 +59,7 @@ def main(query: str):
                 break
             i += 1
         except NoSuchElementException:
-            print("No element exception")
+            #print("No element exception")
             posts_elements_uncollected = driver.find_elements('xpath', post_xpath)
             if posts_elements_uncollected:
                 actions.move_to_element(posts_elements_uncollected[-1]).perform()
