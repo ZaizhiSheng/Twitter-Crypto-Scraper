@@ -1,5 +1,5 @@
-# Twitter-Crypto-Scraper
-twitter scrapping bot
+# Twitter-Crypto-Scraper-$NEAR
+twitter scrapping bot 
 
 # Usage
 run main.py
