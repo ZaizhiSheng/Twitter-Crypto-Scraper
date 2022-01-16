@@ -22,4 +22,7 @@ Article_text | Replies | Retweets | Love
 
 # Usage
 * Open terminal 
-  * run 'python main.py'
+  * run `python main.py`
+
+* Data Scale
+  * `max_posts =` set the number to be desire amount
