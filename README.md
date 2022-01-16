@@ -22,4 +22,4 @@ Article_text | Replies | Retweets | Love
 
 # Usage
 * Open terminal 
-  * run python main.py
+  * run 'python main.py'
